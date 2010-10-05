@@ -16,7 +16,7 @@ namespace OpenRastaDigestDemo.Domain
             _users = new List<Credentials>();
             _users.Add(new Credentials { Username = "david", Password = "david-pass" });
             _users.Add(new Credentials { Username = "fred", Password = "fred-pass" });
-            _users.Add(new Credentials { Username = "geoff", Password = "geoff-pass" });
+            _users.Add(new Credentials { Username = "bob", Password = "bob-pass" });
         }
 
         public Credentials GetCredentialsFor(string username)
