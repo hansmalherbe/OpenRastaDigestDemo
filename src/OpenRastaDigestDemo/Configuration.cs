@@ -28,7 +28,8 @@ namespace OpenRastaDigestDemo
                 ResourceSpace.Uses.CustomDependency<IUserCredentials, UserCredentials>(DependencyLifetime.Singleton);
                 ResourceSpace.Uses.CustomDependency<IAccounts, Accounts>(DependencyLifetime.Singleton);
 
-                // registering a concrete instance of this interface causes the digest authentication to be invoked.
+                // registering an instance of IAuthenticationProvider causes the digest authentication to be invoked.
+                // it does a check internally whthere there is on in the DI resolver.
                 ResourceSpace.Uses.CustomDependency<IAuthenticationProvider, AccountDigestAuthenticationProvider>(DependencyLifetime.Singleton);
 
                 ResourceSpace.Has.ResourcesOfType<HomeResource>()

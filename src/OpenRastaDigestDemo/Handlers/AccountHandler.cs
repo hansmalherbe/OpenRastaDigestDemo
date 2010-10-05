@@ -1,6 +1,7 @@
 ﻿using OpenRasta.Security;
 using OpenRasta.Web;
 using OpenRastaDigestDemo.Domain;
+using OpenRastaDigestDemo.Resources;
 
 namespace OpenRastaDigestDemo.Handlers
 {
@@ -33,7 +34,7 @@ namespace OpenRastaDigestDemo.Handlers
                 return new OperationResult.NotFound();
 
             // return their bank account balance
-            return new OperationResult.OK(account);
+            return new OperationResult.OK(accountResource);
         }
     }
 }

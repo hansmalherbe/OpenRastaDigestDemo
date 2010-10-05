@@ -1,6 +1,6 @@
-﻿using System;
+﻿using OpenRastaDigestDemo.Domain;
 
-namespace OpenRastaDigestDemo.Domain
+namespace OpenRastaDigestDemo.Resources
 {
     public class AccountResource
     {
